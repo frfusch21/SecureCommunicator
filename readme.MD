@@ -19,15 +19,14 @@ pip install cryptography
 Clone this repository to your local machine using:
 
 ```bash
-Copy code
 git clone https://github.com/yourusername/SecureCommunicator.git
 cd SecureCommunicator
+```
 
 ##Usage
 To use SecureCommunicator, instantiate an object of the class and use it to encrypt or decrypt messages. Here is a quick example:
 
 ```python
-Copy code
 from SecureCommunicator import SecureCommunicator
 
 # Initialize the communicator
@@ -40,8 +39,10 @@ print('Encrypted:', encrypted_msg)
 # Decrypt the message
 decrypted_msg = comms.decrypt_message(encrypted_msg)
 print('Decrypted:', decrypted_msg)
-How It Works
+```
+
+## How It Works
 SecureCommunicator generates a pair of RSA keys during initialization. The public key is used for encrypting messages, while the private key is used for decrypting. OAEP padding is added to the encryption process to ensure security against chosen ciphertext attacks.
 
-##License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
