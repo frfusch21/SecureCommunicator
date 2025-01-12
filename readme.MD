@@ -13,6 +13,7 @@ Ensure you have Python installed on your system (Python 3.6 or later recommended
 
 ```bash
 pip install cryptography
+```
 
 ## Installation
 Clone this repository to your local machine using:
